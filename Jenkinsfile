@@ -62,7 +62,8 @@ stages {
      }
     stage('Deploy War') {
       steps {
-        sh label: '', script: 'ansible-playbook deploy.yml'
+        sh label: '', script: 'ansible-playbook deploy-withinfra.yml'
+        //sh label: '', script: 'ansible-playbook deploy.yml' 
       }
  }
 }
