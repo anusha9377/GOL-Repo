@@ -66,6 +66,7 @@ stages {
         stage('Update Artifact Version') {
       steps {
         sh label: '', script: '''sed -i s/artifactversion/$BUILD_NUMBER/ deploy-withinfra.yml'''
+        //sh label: '', script: '''sed -i s/artifactversion/$BUILD_NUMBER/ deploy.yml'''
       }
  }
     
