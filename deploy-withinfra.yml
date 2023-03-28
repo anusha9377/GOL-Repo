@@ -20,7 +20,7 @@
     ec2:
       instance_type: t2.micro
       key_name: sankar-aws-key
-      image: ami-0ba7293b2311bf780
+      image: ami-09a3f8e2bfc310848
       region: us-east-2
       group: launch-wizard-3
       count: 1
@@ -29,7 +29,7 @@
       instance_tags: 
           name: webserver
       assign_public_ip: yes
-      vpc_subnet_id: subnet-0710073e799d8ce73
+      vpc_subnet_id: subnet-049a40af225e2b990
     register: ec2  
   - name: Add Instance IP into in-memory inventory file not into hosts file
     add_host: 
